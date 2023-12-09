@@ -4,10 +4,7 @@
 sudo apt update && sudo apt full-upgrade
 sudo apt install apt-transport-https avahi-daemon ca-certificates curl gnupg-agent software-properties-common
 
-### Install and setup neofetch
-sudo apt install neofetch
-sudo cp motd.sh /etc/profile.d/motd.sh
-sudo chmod +x /etc/profile.d/motd.sh
+sudo bash ./scripts/setup-neofetch.sh
 
 ### Passwordless sudo
 sudo echo 'ubuntu ALL=(ALL) PASSWD: ALL' > /etc/sudoers.d/010_pi-nopasswd
