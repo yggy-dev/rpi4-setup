@@ -1,8 +1,10 @@
 [Unit]
 Description=LCD Library
+After=network.target
 
 [Service]
 ExecStart=/usr/local/bin/display
+KillSignal=SIGINT
 Restart=always
 
 [Install]
