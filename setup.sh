@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sudo bash ./scripts/setup-nopasswd.sh
 sudo bash ./scripts/setup-apt.sh
 sudo bash ./scripts/setup-neofetch.sh
 sudo bash ./scripts/setup-boot.sh
